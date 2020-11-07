@@ -11,4 +11,4 @@ do
   sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock volcan96/docker-autocompose $p > "$backup_dir/$p-$current_time.yaml"
 done < containers.txt
 find "$backup_dir" -name "*.yaml" -mtime +5 -exec rm {} \;
-ls -acl "$backup_dir"
+ls -acl "$backup_dir";
