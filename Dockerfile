@@ -1,5 +1,5 @@
 #FROM python:3-alpine
-FROM arm32v7/python:3.8-slim
+FROM arm32v7/python:rc-slim
 WORKDIR /usr/src/app
 
 COPY . .
